@@ -13,6 +13,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set incsearch
 set backspace=2
+set clipboard=unnamedplus
 
 call plug#begin('~/.vim/plugged')
   Plug 'valloric/youcompleteme'
