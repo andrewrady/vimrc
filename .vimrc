@@ -13,6 +13,9 @@ set nobackup
 set undodir=~/.vim/undodir
 set incsearch
 set backspace=2
+set clipboard=unnamed
+setlocal foldmethod=indent
+set nofoldenable
 
 call plug#begin('~/.vim/plugged')
   Plug 'valloric/youcompleteme'
@@ -24,8 +27,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree'
 call plug#end()
 
-:let mapleader = "\<Space>"
 colorscheme gruvbox
 set background=dark
 let g:OmniSharp_server_use_mono = 1
+
+:let mapleader = "\<Space>"
 nnoremap <leader>n :NERDTreeToggle<CR>
